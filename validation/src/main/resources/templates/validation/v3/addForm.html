@@ -37,7 +37,7 @@
             </div>
         </div>
         <div>
-            <label for="price" th:text="#{label.item.price}">가격</label>
+            <label for="price" th:t ext="#{label.item.price}">가격</label>
             <input type="text" id="price" th:field="*{price}"
                    th:errorclass="field-error" class="form-control" placeholder="가격을 입력하세요">
             <div class="field-error" th:errors="*{price}">
@@ -62,7 +62,7 @@
             <div class="col">
                 <button class="w-100 btn btn-secondary btn-lg"
                         onclick="location.href='items.html'"
-                        th:onclick="|location.href='@{/validation/v2/items}'|"
+                        th:onclick="|location.href='@{/validation/v3/items}'|"
                         type="button" th:text="#{button.cancel}">취소</button>
             </div>
         </div>
